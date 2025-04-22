@@ -15,6 +15,8 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
+export const runtime = 'edge';
+
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
