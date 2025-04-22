@@ -6,10 +6,10 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Destino Japão – Seu intercâmbio completo para o Japão",
+  title: "Leaving Brazil",
   description:
-    "Assessoria completa com curso de japonês, JLPT, visto Tokutei Ginou, descontos e suporte vitalício. Lançamento por R$ 2.000,00.",
-    generator: 'v0.dev'
+    "Realize seu sonho de morar no exterior",
+    generator: '@netocgi'
 }
 
 export default function RootLayout({
