@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  trailingSlash: true, // Ensure URLs end with a slash (e.g., /about/ instead of /about)
   reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,

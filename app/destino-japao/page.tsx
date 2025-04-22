@@ -5,8 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
 
-export const runtime = 'edge';
-
 export default function DestinoJapaoPage() {
   return (
     <div className="flex min-h-screen flex-col">
