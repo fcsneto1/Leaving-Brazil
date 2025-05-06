@@ -73,10 +73,10 @@ export default function DestinoJapaoPage() {
                   src="https://i.ibb.co/b9Xy2SC/neto-matsuri.jpg"
                   alt="Neto em um Matsuri em Tóquio"
                   fill
-                  className="object-cover"
                   placeholder="blur" // Placeholder com efeito blur
                   blurDataURL={bannerLR} // Imagem de baixa resolução como placeholder
                   loading="lazy" // Lazy loading (opcional, já é padrão)
+                  className="object-cover"
                 />
               </div>
             </div>

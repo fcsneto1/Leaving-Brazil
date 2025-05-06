@@ -84,10 +84,11 @@ export default function HomePage() {
                   src="https://i.ibb.co/mCqkJfsw/aeroporto.jpg"
                   alt="Pessoas viajando pelo mundo"
                   fill
-                  className="object-cover"
                   placeholder="blur" // Placeholder com efeito blur
                   blurDataURL={bannerLR} // Imagem de baixa resolução como placeholder
                   loading="lazy" // Lazy loading (opcional, já é padrão)
+                  quality={75} // Qualidade da imagem (ajuste conforme necessário)
+                  className="object-cover"
                 />
               </div>
             </div>
