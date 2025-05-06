@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
 
+
+const bannerLR = '/img/low/LR-neto-matsuri.jpg';
+
 export default function DestinoJapaoPage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -13,7 +16,7 @@ export default function DestinoJapaoPage() {
           <div className="flex items-center gap-2">
             <Link href="/">
               <Image
-                src="https://i.ibb.co/99188NcK/logo-dj-180.webp"
+                src="/img/logo-dj-180.webp"
                 alt="Destino Japão"
                 width={180}
                 height={60}
@@ -71,6 +74,9 @@ export default function DestinoJapaoPage() {
                   alt="Neto em um Matsuri em Tóquio"
                   fill
                   className="object-cover"
+                  placeholder="blur" // Placeholder com efeito blur
+                  blurDataURL={bannerLR} // Imagem de baixa resolução como placeholder
+                  loading="lazy" // Lazy loading (opcional, já é padrão)
                 />
               </div>
             </div>

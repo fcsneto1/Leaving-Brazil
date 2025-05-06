@@ -15,6 +15,9 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
+
+const bannerLR = '/img/low/LR-banner.jpg';
+
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -23,7 +26,7 @@ export default function HomePage() {
           <div className="flex items-center gap-2">
             <Link href="/">
               <Image
-                src="https://i.ibb.co/XfDDgkgv/logo-lb-180.webp"
+                src="/img/logo-lb-180.webp"
                 alt="Leaving Brazil"
                 width={180}
                 height={60}
@@ -82,6 +85,9 @@ export default function HomePage() {
                   alt="Pessoas viajando pelo mundo"
                   fill
                   className="object-cover"
+                  placeholder="blur" // Placeholder com efeito blur
+                  blurDataURL={bannerLR} // Imagem de baixa resolução como placeholder
+                  loading="lazy" // Lazy loading (opcional, já é padrão)
                 />
               </div>
             </div>
