@@ -15,9 +15,6 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 
-
-const bannerLR = '/img/low/LR-banner.jpg';
-
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -85,7 +82,7 @@ export default function HomePage() {
                   alt="Pessoas viajando pelo mundo"
                   fill
                   placeholder="blur" // Placeholder com efeito blur
-                  blurDataURL={bannerLR} // Imagem de baixa resolução como placeholder
+                  blurDataURL= "/img/low/LR-banner.jpg" // Imagem de baixa resolução como placeholder
                   loading="lazy" // Lazy loading (opcional, já é padrão)
                   quality={75} // Qualidade da imagem (ajuste conforme necessário)
                   className="object-cover"

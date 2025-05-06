@@ -5,9 +5,6 @@ import { Button } from "@/components/ui/button"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent } from "@/components/ui/card"
 
-
-const bannerLR = '/img/low/LR-neto-matsuri.jpg';
-
 export default function DestinoJapaoPage() {
   return (
     <div className="flex min-h-screen flex-col">
@@ -74,7 +71,7 @@ export default function DestinoJapaoPage() {
                   alt="Neto em um Matsuri em Tóquio"
                   fill
                   placeholder="blur" // Placeholder com efeito blur
-                  blurDataURL={bannerLR} // Imagem de baixa resolução como placeholder
+                  blurDataURL="/img/low/LR-neto-matsuri.jpg" // Imagem de baixa resolução como placeholder
                   loading="lazy" // Lazy loading (opcional, já é padrão)
                   className="object-cover"
                 />
